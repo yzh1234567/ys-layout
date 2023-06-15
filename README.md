@@ -1,16 +1,14 @@
-
-
-# YsLayout
-
+# VyLayout
+  这是基于element-plus和vue3.x做的布局组件
 ## Props
 
-<!-- @vuese:YsLayout:props:start -->
+<!-- @vuese:VyLayout:props:start -->
 |Name|Description|Type|Required|Default|
 |---|---|---|---|---|
 |iconComponent|渲染布局图标的组件名称,默认为el-icon;若为自定义组件,则必须有icon属性,进行图标渲染|`String`|`false`|el-icon|
-|layout|三种不同方式布局|`'top'` / `'mix'`/`'side'`|`false`|side|
+|layout|三种不同方式布局|`'top'` / `'mix'`/`'side'`|`false`|mix|
 |menus|-|`Array`|`false`|[]|
-|avatar|头像路径|`String`|`false`|https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png|
+|avatar|头像路径|`String`|`false`|-|
 |ellipsis|顶部导航栏是否省略多余的子项|`Boolean`|`false`|true|
 |topBackground|顶部导航栏背景色|`String`|`false`|#545c64|
 |topActiveColor|顶部导航栏激活字体色|`String`|`false`|#409EFF|
@@ -25,24 +23,24 @@
 |expandIcon|侧边栏展开操作按钮图标名称|`String`|`false`|Expand|
 |foldIcon|侧边栏折叠操作按钮图标名称|`String`|`false`|Fold|
 |logoImg|logo图片的地址|`String`|`false`|-|
-|logoTitle|logo的标题|`String`|`false`|余生管理系统|
+|logoTitle|logo的标题|`String`|`false`|-|
 
-<!-- @vuese:YsLayout:props:end -->
+<!-- @vuese:VyLayout:props:end -->
 
 
 ## Events
 
-<!-- @vuese:YsLayout:events:start -->
+<!-- @vuese:VyLayout:events:start -->
 |Event Name|Description|Parameters|
 |---|---|---|
 |collopse|折叠操作按钮事件|-|
 
-<!-- @vuese:YsLayout:events:end -->
+<!-- @vuese:VyLayout:events:end -->
 
 
 ## Slots
 
-<!-- @vuese:YsLayout:slots:start -->
+<!-- @vuese:VyLayout:slots:start -->
 |Name|Description|Default Slot Content|
 |---|---|---|
 |right-content|自定义顶部导航栏右侧内容 或侧边栏底部内容|-|
@@ -53,7 +51,21 @@
 |right-content|自定义顶部导航栏右侧内容或侧边栏底部内容|-|
 |main|主要内容展示区域|-|
 
-<!-- @vuese:YsLayout:slots:end -->
+<!-- @vuese:VyLayout:slots:end -->
 
+
+## 使用方法
+  * 引入组件及样式
+  * import VyLayout from 'vy-layout'
+  * import 'vy-layout/style/index.css'
+  * app.use(VyLayout)
+
+
+<p align="center">
+  <h3>组件样式</h3>
+	<img alt="mix" src="./public/img/mix.png">
+  <img alt="top" src="./public/img/top.png">
+  <img alt="side" src="./public/img/side.png">
+</p>
 
 
